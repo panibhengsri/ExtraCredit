@@ -37,10 +37,16 @@
 
     <script>
 
-        function copy(){
+        function copyLtoR(){
             var c1 = document.getElementById("c1");
             var c2 = document.getElementById("c2");
             c2.value = c1.value;
+        }
+
+        function copyRtoL(){
+            var c1 = document.getElementById("c1");
+            var c2 = document.getElementById("c2");
+            c1.value = c2.value;
         }
     
     </script>
@@ -55,8 +61,8 @@
             </div>
 
             <div class ="column">
-                <button style="font-size:24px" onClick = "copy()"> <i class="fa fa-arrow-circle-right"></i></button>
-                <button name = "button" onClick = "copy()"> -> </button>
+                <button style="font-size:24px" onClick = "copyLtoR()"> <i class="fa fa-arrow-circle-right"></i></button>
+                <button style="font-size:24px" onClick = "copyRtoL()"> <i class="fa fa-arrow-circle-left"></i></button>
             </div>
                 
             <div class="column">
