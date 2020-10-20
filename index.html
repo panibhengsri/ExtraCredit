@@ -41,12 +41,14 @@
             var c1 = document.getElementById("c1");
             var c2 = document.getElementById("c2");
             c2.value = c1.value;
+            c1.value = '';
         }
 
         function copyRtoL(){
             var c1 = document.getElementById("c1");
             var c2 = document.getElementById("c2");
             c1.value = c2.value;
+            c2.value = '';
         }
     
     </script>
@@ -55,18 +57,18 @@
 
         <div class="row">
             <div class="column">
-                <textarea id="c1" name="c1">
+                <textarea id="c1" name="c1" rows="4" cols="50">
                     (c1)
                 </textarea>
             </div>
 
             <div class ="column">
-                <button style="font-size:24px" onClick = "copyLtoR()"> <i class="fa fa-arrow-circle-right"></i></button>
                 <button style="font-size:24px" onClick = "copyRtoL()"> <i class="fa fa-arrow-circle-left"></i></button>
+                <button style="font-size:24px" onClick = "copyLtoR()"> <i class="fa fa-arrow-circle-right"></i></button>
             </div>
                 
             <div class="column">
-                <textarea id="c2" name="c2">
+                <textarea id="c2" name="c2" rows="4" cols="50">
                     (c2)
                 </textarea>
             </div>
