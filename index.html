@@ -2,7 +2,6 @@
 
 <!DOCTYPE html>
 <html>
-
     <head>
         <title></title>
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,38 +9,31 @@
     </head>
 
     <style>
-
         .row {
             display: flex;
         }
-
         .column {
             flex: 50%;
             margin: auto;
         }
-
     </style>
 
     <script>
-
         function copyLtoR(){
             var c1 = document.getElementById("c1");
             var c2 = document.getElementById("c2");
             c2.value = c1.value;
             c1.value = '';
         }
-
         function copyRtoL(){
             var c1 = document.getElementById("c1");
             var c2 = document.getElementById("c2");
             c1.value = c2.value;
             c2.value = '';
         }
-    
     </script>
 
     <body>
-
         <div class="row">
             <div class="column">
                 <textarea id="c1" name="c1" rows="4" cols="50">
@@ -60,7 +52,5 @@
                 </textarea>
             </div>
         </div>
-
     </body>
-
 </html>
