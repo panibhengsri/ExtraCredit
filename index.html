@@ -35,7 +35,6 @@
             var c1 = document.getElementById("c1");
             var c2 = document.getElementById("c2");
             c2.value = c1.value;
-            delete c1.value;
         }
     
     </script>
@@ -50,6 +49,7 @@
             </div>
 
             <div class ="column">
+                <button style="font-size:24px" onClick = "copy()"> <i class="fa fa-arrow-circle-left"></i></button>
                 <button name = "button" onClick = "copy()"> -> </button>
             </div>
                 
