@@ -1,4 +1,4 @@
-/*
+<!----
     Create an HTML page with 2 text boxes positioned to the left and 
     right of a button.
 
@@ -11,7 +11,7 @@
     The next press of the button should move the text on the right to the 
     textbox on the left - and change the button face back to an arrow facing 
     to the right.
-*/
+---->
 
 <!DOCTYPE html>
 <html>
@@ -28,17 +28,28 @@
 
     </style>
 
+    <script>
+
+        function copy(){
+            var c1 = document.getElementById("c1");
+            var c2 = document.getElementById("c2");
+            c2.value = c1.value;
+        }
+    
+    </script>
+
     <body>
 
         <div class="row">
             <div class="column">
-                <textarea id="col1" name="col1">
-                    Insert text here (col1)
+                <textarea id="c1" name="c1">
+                    Insert text here (c1)
                 </textarea>
             </div>
+                <button name = "button" onClick = "copy()"> (->) </button>
             <div class="column">
-                <textarea id="col2" name="col2">
-                    Insert text here (col2)
+                <textarea id="c2" name="c2">
+                    Insert text here (c2)
                 </textarea>
             </div>
         </div>
